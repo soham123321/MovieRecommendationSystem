@@ -1,6 +1,6 @@
 # Movie Recommendation System
 
-This repository contains code for a movie recommendation system built using Python. The dataset used for this system is pulled from Kaggle using the Kaggle API. The dataset, provided by TMDB, consists of information on 10,000 movies including their tags and genres.
+This repository contains code for a movie recommendation system built using Python. The dataset used for this system is pulled from Kaggle using the Kaggle API. The dataset, provided by TMDB, consists of information on 10,000 movies including their tags and genres. There are 3 algorithms implemented for movie recommendations (bag of words/tfidf/svds). The demo mp4 is being run on svds but can be easily modified to run on any other algorithm.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ To retrieve the dataset, the Kaggle API is used. Please make sure you have a Kag
 
 ## Feature Engineering
 
-To prepare the data for the recommendation system, the tags and genres columns are merged. Then, the bag of words/count vectorizer technique is applied for feature engineering. Alternatively you can also use tfidfvectorizer from sklearn for calculating the cosine similarity
+To prepare the data for the recommendation system, the tags and genres columns are used. TfIdf is applied to these two columns and the are horizontally stacked together to create a feature matrix.
 
 ## Similarity Calculation
 
